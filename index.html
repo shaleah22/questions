@@ -1,43 +1,27 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>QUESTIONS</title>
+    <title>THINK</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 <style>
-   
-
-
-    html, body {
-        background-color:   #dc143c 
-    }
-
-    h1 {
-        font-family: arial;
-        text-align: center;
-        color: #F9E79F
-    }
-
     body {
+        font-family: Arial, sans-serif;
         text-align: center;
-        font-family: arial;
-        font-size: 1.5em;
-        color: white
     }
-
-    img {
-        width: 400px;
+    #output {
+        font-size: 24px;
     }
-
-
-
+    
+    #questionDisplay {
+        font-size: 36px; /* Adjust the font size as per your preference */
+    }
 </style>
 
 </head>
 <body>
-    <h1>QUESTIONS</h1>
+    
     <div id="questionDisplay"></div>
     <br><br>
     <button onClick="newQuestion()">NEXT QUESTION</button>
@@ -45,8 +29,19 @@
  
     <script src="javascript.js"></script>
     <script>
-        var questions = [
-         
+    var questions = [
+        "HOW TO LOVE EXERCISE", 
+        "HOW TO MAKE NUTRIENT DENSE DELICIOUS FOOD THAT I WANT TO EAT", 
+        "HOW TO MAKE WRITING MUSIC MORE FUN AND INTERESTING", 
+        "FIND A GOOD PLACE FOR MY ANIMAL PROPERTY",
+        "HOW TO LEARN FIREBASE",
+        "HOW TO MAKE SCHOOL INTERESTING AND ENJOYABLE",
+        "HOW TO MAKE AUDIOBOOKS MORE ENJOYABLE",
+        "WHAT NEW THINGS CAN I DO THAT I WILL PROBABLY LOVE",
+        "HOW TO ENJOY STRENGTH TRAINING",
+        "WHAT WOULD BE A GOOD DINNER",
+
+
 
     "What have you created that you are most proud of?", 
     "What bends your mind every time you think about it?", 
@@ -61,7 +56,7 @@
     "Pancakes or waffles?", 
     "What was the best compliment you've ever received?",
     "If you lost all of your possessions but one, what would you want it to be?", 
-    "Who inspires you to be better?", 
+    
     "What dumb accomplishment are you most proud of?", 
     "When was the last time you changed your opinion about something major?",  
     "What is something you can never seem to finish?",
@@ -173,30 +168,24 @@
     "What sport do you wish you were really good at?",
     "What's the best holiday?",
     "How did you spend your last birthday?",
-    "Are you having a good time?",
-    "Why did you come tonight?",
-    "Was it a pain for you to get here tonight?",
+ 
+    
     "I love that shirt/jacket/dress/shoes. Where did you get it?",
-    "Wow, it's so hot/cold in here.",
-    "Do you know a lot of people here?",
+ 
     "What are you reading right now?",
     "What's your favorite restaurant around here?",
-    "What's the next exciting event you have coming up?",
-    "Doing anything fun this weekend?",
+     "Doing anything fun this weekend?",
     "Do you have any pets?",
-    "What's one interesting thing about yourself no one really knows?",
-    "What do you do for a living?",
+     "What do you do for a living?",
     "If you could move anywhere, where would you go?",
     "What was the last movie you saw?",
     "What do you normally do for fun?",
     "What hobby do you wish you had more time for?",
-    "If you weren't here, what would you be doing?",
-    "What is your favorite holiday?",
+      "What is your favorite holiday?",
     "Do you have any nicknames?",
     "What's your biggest pet peeve?",
     "What is your favorite guilty pleasure TV show?",
     "Tell me three fun facts about yourself.",
-    "The food looks great. What's the best thing you've had so far?",
     "Have you ever been here before?",
     "What's the best thing about your job?",
     "Where did you grow up?",
@@ -233,8 +222,7 @@
     "What piece of technology could you live without?",
     "What do you think the world will be like 20 years in the future?",
     "What is something you've failed at recently?",
-    "Related: 250 Deep Questions To Ask",
-    
+     
     "What made you choose this as your career?",
     "What's the most interesting thing you've worked on lately?",
     "What do you love most about your job?",
@@ -246,8 +234,7 @@
     "What inspires you at work each day?",
     "If you could change one thing about this industry, what would it be?",
     "Who has been your career role model?",
-    "Man, I really hate networking.",
-    "What's the most interesting thing you've learned at work?",
+       "What's the most interesting thing you've learned at work?",
     "Do you ever travel for your job? Where have you gone?",
     "How do you keep yourself organized every day?",
     "How many emails have you been avoiding answering this week?",
@@ -255,9 +242,7 @@
     "What's the biggest challenge you've taken on this year?",
     "What's your favorite project you've worked on so far?",
     "What do you find most beneficial about networking events?",
-    "Related: 250 Never Have I Ever Questions",
-    "Funny Conversation Starters",
-    "Do you ever sing in the shower?",
+     "Do you ever sing in the shower?",
     "122, What is the worst piece of advice you've ever gotten?",
     "What's the most embarrassing thing that's happened to you recently?",
     "Tell me about the worst pickup line you've ever gotten.",
@@ -317,9 +302,7 @@
     "What do you like most about your job?",
     "What do you think is your most annoying quirk?",
     "What's the weirdest text message you've ever gotten?",
-    "Related: 30 Fun Texting Games",
-    "What do you hate the most about dating?",
-    "Where's your favorite place in the world?",
+      "Where's your favorite place in the world?",
     "What's the best vacation you've ever been on?",
     "How close are you with your family?",
     "Do you prefer to stay in or go out?",
@@ -341,15 +324,8 @@
     "What movie are you really excited to see?",
     "How do you spend your free time?",
     "Are you a morning person or a night owl?",
-    "Related: 250 Questions to Ask a Guy",
- 
-    "What are you drinking?",
-    "What drink should I order next?",
-    "Have you ever been here before?",
-    "What's your favorite bar?",
     "What's your favorite thing to eat here?",
-    "Do you like this song?",
-    "If you could have them play any song right now, what would it be?",
+      "If you could have them play any song right now, what would it be?",
     "What were you doing before you came here?",
     "What's your favorite place to hang out around here?",
     "Are you having fun?",
@@ -361,10 +337,7 @@
     "Have you ever done karaoke?",
     "I like your shirt, where did you get that?",
     "How do you know the friends you're here with?",
-    "Do you know so-and-so?",
-    "What made you laugh today?",
-    "Good Conversation Starters With Friends",
-    "If you could only eat one food for the rest of your life, what would it be?",
+       "If you could only eat one food for the rest of your life, what would it be?",
     "What's your best tip for saving money?",
     "What is your favorite quote right now?",
     "Have you talked to so-and-so lately?",
@@ -428,20 +401,26 @@
 
 
            
-        ];
+        
+     
+    ];
 
-        function newQuestion() {
-            var randomNumber = Math.floor(Math.random() * (questions.length));
-            document.getElementById('questionDisplay').innerHTML = questions[randomNumber];
+    function newQuestion() {
+        var randomNumber = Math.floor(Math.random() * (questions.length));
+        document.getElementById('questionDisplay').innerHTML = questions[randomNumber];
+    }
+
+    // Call newQuestion() on page load
+    window.onload = newQuestion;
+
+    // Add event listener for keyup event
+    document.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            newQuestion();
         }
+    });
+</script>
 
-        // Add event listener for keyup event
-        document.addEventListener('keyup', function(event) {
-            if (event.key === 'Enter') {
-                newQuestion();
-            }
-        });
-    </script>
 
 </body>
 </html>
